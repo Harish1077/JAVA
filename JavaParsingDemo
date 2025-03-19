@@ -1,0 +1,122 @@
+import java.util.Scanner;
+
+public class abc {
+    public static void main(String[] args) {
+        
+        /* int i = Integer.parseInt(args[0]);
+        double d = Double.parseDouble(args[1]);
+        boolean b = Boolean.parseBoolean(args[2]);
+        System.out.println(i);
+        System.out.println(d);
+        System.out.println(b);
+        */
+
+
+        /*int i = Integer.parseInt("1000",2);
+        long l = Long.parseLong("1111",4);
+        system.out.println(i);
+        system.out.println(l);
+        */
+
+
+        /*Integer I = new Integer(10);
+        String s = I.toString();
+        System.out.println(s);
+        */
+
+
+        /*Integer num1 = 5;
+        Integer num2 = 5;
+        Integer num3 = Integer.valueOf(5);
+        Integer num4 = Integer.valueOf(5);
+        boolean value1 = (num1 == num2);
+        boolean value2 = (num3 == num4);
+        System.out.println(value1);
+        System.out.println(value2);
+        */
+
+
+        /*int x=0;
+        if(x)
+        {
+            System.out.println("hello");
+        }
+        */
+
+
+        /*int x=0;
+        if(x==10)
+        {
+            System.out.println("hello");
+        }
+        else
+        System.out.println("hi");
+        */
+
+
+        /*boolean x=false;
+        if(x=true)
+        {
+            System.out.println("hello");
+        }
+        else
+        System.out.println("hi");
+        */
+
+
+        /*byte b=10;
+        switch (b) 
+        {
+            case 10:
+            System.out.println("10");    
+            break;
+            case 100:
+            System.out.println("100");
+            break;
+            default:
+            System.out.println("100.1");
+        } */
+
+
+
+        /*char b='a';
+        switch (b) {
+            case 'a':
+            case 'a':
+            System.out.println("10");    
+            break;
+            case 'b':
+            System.out.println("100");
+            break;
+            default:
+            System.out.println("100.1");
+         } */
+
+
+
+
+
+        /*String ss=null;
+        String FName=null;
+        Scanner sc=new Scanner(System.in);
+        while(sc.hasNext())
+        {
+            ss=sc.next();
+            FName=sc.next();
+            System.out.println(ss+FName);
+        } */
+           
+
+
+        int k=0;
+        for(int i=10;i>0;i--) {
+            while(i>3);
+            i-=3;
+            k +=1;
+        }
+        System.out.println(k);
+        
+
+
+    }
+}
