@@ -1,0 +1,51 @@
+// import java.util.function.*;
+// public class functionalinterface {
+//     public static void main(String[] arg){
+//         predicate<Integer> g =(i)->i>10;
+//         predicate<Integer> l =(i)->i>20;
+//         boolean result=g.and(l).test(15);
+//         System.out.println(result);
+//         boolean result1=g.or(l).test(20);
+//         System.out.println(result1);
+//         boolean result2=g.and(l).negate().test(20);
+//         System.out.println(result2);};
+// }
+
+
+// import java.util.function.*;
+// public class functionalinterface {
+//     static void pred(int number, Predicate<Integer> predicate) {
+//         if (predicate.test(number)) {
+//             System.out.println(number+ number);
+//         }
+//     }
+//     public static void main(String[] args) {
+//         pred(10, (i) -> i > 7);
+//     } 
+// }
+
+
+// import java.util.function.*;
+// public class functionalinterface {
+//     public static void main(String[] arg){
+//         int list[]={1,2,3,4};
+//         Consumer<Integer> consumer = (Integer x)->System.out.println(x);
+//         doq(list,consumer);
+//     }
+//     static void doq(int[] list,Consumer<Integer> consumer)
+//     {
+//         for(int t:list)
+//         {
+//             consumer.accept(t);
+//         }
+//     }
+// }
+
+
+import java.util.function.*;
+public class functionalinterface {
+    public static void main(String[] arg){
+        Supplier<Double> randomValue = () -> Math.random();
+        System.out.println(randomValue.get());
+    }
+}
