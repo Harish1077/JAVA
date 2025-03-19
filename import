@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class scannerclass {
+    public static void main(String[] arg)
+    {
+        string s= hello world.10+3 = 13.0 falsw;
+        Scanner sc = new Scanner(s);
+
+        while(sc,hasNext())
+        {
+            if(sc.hasNextBoolean())
+            system.out.println("Boolean value:"+sc.hasNextBoolean());
+            else
+            system.out.println()
+        }
+    }
+}
