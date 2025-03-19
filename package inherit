@@ -1,0 +1,21 @@
+package inherit;
+
+abstract class AbstractExample {
+    public final void regularMethod() {
+        System.out.println("This is a final method.");
+    }
+
+    public abstract void abstractMethod();
+}
+
+public class ConcreteExample extends AbstractExample {
+    public void abstractMethod() {
+        System.out.println("Abstract method implementation.");
+    }
+
+    public static void main(String[] args) {
+        ConcreteExample example = new ConcreteExample();
+        example.abstractMethod();
+        example.regularMethod(); 
+    }
+}
