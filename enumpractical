@@ -1,0 +1,84 @@
+/*enum Day {
+    MONDAY,TUESADAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY,SUNDAY;
+}
+public class enumpractical{
+    public static void main (String[] arg)
+    {
+        Day day=Day.MONDAY;
+        System.out.println(day);  //outside the class
+    }
+}
+*/
+
+
+/*public class enumpractical{
+    enum Day {
+        MONDAY,TUESADAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY,SUNDAY;
+    }
+    public static void main (String[] arg)
+    {
+        Day day=Day.MONDAY;
+        System.out.println(day);  //Inside the class
+    }
+}
+*/
+
+/*import java.util.Scanner;
+public class enumpractical{
+    enum Day {
+        MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY,SUNDAY;
+    } 
+    Day day;                             //user define data type
+    public enumpractical(Day day1)
+    {
+        this.day=day1;
+    }
+    public void abc()
+    {
+        switch(day)
+        {
+            case MONDAY:
+            System.out.println("Hello MONDAY");
+            break;
+        
+            case TUESDAY:
+            System.out.println("Hello TUESDAY");
+            break;
+        
+            case WEDNESDAY:
+            System.out.println("Hello WEDNESDAY");
+            break;
+        
+            case THURSDAY:
+            System.out.println("Hello THURSDAY");
+            break;
+        
+            case FRIDAY:
+            System.out.println("Hello FRIDAY");
+            break;
+        
+            case SUNDAY:
+            System.out.println("Hello SUNDAY");
+            break;
+        }
+    }
+      public static void main (String[] arg)
+    {
+        Scanner sc=new Scanner(System.in);   //incomplete code 
+
+
+    }
+} */
+
+
+
+enum main{
+    monday,tuesday,wednesday;
+    public static void main(String[] arg)
+    {
+        main input[]=main.values();
+        for(main a: input)
+        System.out.println(a.ordinal()+" " +a);
+    }
+
+}
