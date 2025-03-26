@@ -1,0 +1,54 @@
+import java.time.*;
+class timezone{
+    public static void main(String[] arg) 
+    {
+        LocalTime c1 = LocalTime.now();
+        System.out.println("Current Time: "+c1);
+
+        LocalTime c2 = LocalTime.now(ZoneId.of("Asia/Dubai"));
+        System.out.println("Current Time IN DUBAI: "+c2);
+
+        LocalTime t1=LocalTime.of(10,30,20,20000000);
+        System.out.println("TIME t1 "+t1);
+
+        LocalTime parsedtime=LocalTime.parse("10:55:55");
+        System.out.println("parsedtime: ");
+
+        LocalTime t4=LocalTime.of(14,30,15,500000000);
+        int hour=t4.getHour();
+        int minute=t4.getMinute();
+        int second=t4.getSecond();
+        int nano=t4.getNano();
+        System.out.println("hour: "+hour + " minute: "+minute + " second: "+second + " nano: "+nano);
+        System.out.println("is"+c1+"after"+t4+"?"+c1.isAfter(t4));
+        System.out.println("is"+c1+"before"+t4+"?"+c1.isBefore(t4));
+
+        LocalDate d1=LocalDate.of(2023, 07, 29);
+        LocalDateTime dt= t4.atDate(d1);
+        System.out.println("Date Time: "+dt);
+
+        LocalTime n1=t4.minusHours(10);
+        System.out.println("New Time is: "+n1);
+
+        LocalTime n2=t4.withMinute(10);
+        System.out.println("New Time is: "+n2);
+        LocalTime n3=t4.withSecond(10);
+        System.out.println("New Time is: "+n3);
+        LocalTime n4=t4.withNano(10);
+        System.out.println("New Time is: "+n4);
+
+        LocalTime n5=t4.plusHours(10);
+        System.out.println("New Time is: "+n5);
+        LocalTime n6=t4.plusMinutes(10);
+        System.out.println("New Time is: "+n6);
+        LocalTime n7=t4.plusSeconds(10);
+        System.out.println("New Time is: "+n7);
+
+        int hour1=t4.getHour();
+        System.out.println(hour1);
+        int minute1=t4.getMinute();
+        System.out.println(minute1);
+        int second1=t4.getSecond();
+        System.out.println(second1);
+    }
+}
