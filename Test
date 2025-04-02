@@ -1,0 +1,59 @@
+// public class test {
+//     public static void main(String[] args) {
+//         dostuff();
+//     }
+//     public static void dostuff() {
+//         domorestuff();
+//     }
+//     public static void domorestuff() {
+//         System.out.println("Hello");
+//     }
+// }
+
+// public class test {
+//     public static void main(String[] args) {
+//         System.out.println("Statement1");
+//         try{
+//         System.out.println("Statement3");
+        
+//     }
+//     catch(ArithmeticException e) {
+//         System.out.println("cannot divided by zero");
+//     }
+//     System.out.println("Statement3");
+//     }
+// }
+
+// public class test {
+//     public static void main(String[] args) {
+//         String str="abc";
+//         System.out.println("Statement1");
+//         try{
+//             int length=Integer.parseInt(str);
+//             System.out.println("length");
+        
+//     }
+//     catch(ArithmeticException e) {
+//         System.out.println("Nuber format");
+//     }
+//     System.out.println("Statement3");
+//     }
+// }
+
+
+public class test {
+    public static void main(String[] args) {
+        int[] number={1,2,3,4,5};
+        System.out.println("Statement1");
+        try{
+            int index=10;
+            int value=number[index];
+        System.out.println("value");
+        
+    }
+    catch(ArrayIndexOutOfBoundsException e) {
+        System.out.println("Array index out of bounds");
+    }
+    System.out.println("Statement3");
+    }
+}
