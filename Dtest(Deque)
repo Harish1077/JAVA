@@ -1,0 +1,20 @@
+import java.util.Deque;
+
+class test {
+    public static void main(String[] agr) {
+        Deque<Integer> s = new Deque<>(); 
+        s.offer(1);
+        s.offerFirst(2);
+        s.offerLast(3); 
+        System.out.println(s.getFirst()); 
+        System.out.println(s.getLast()); 
+        System.out.println(s); 
+        s.poll();
+        s.pollFirst();
+        s.pollLast();
+        Iterator i : s.Iterator();
+        while (i.hasNext()) {
+            System.out.println(i.next());
+        }      
+    }
+}
