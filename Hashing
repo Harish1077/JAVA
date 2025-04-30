@@ -1,0 +1,118 @@
+import java.util.*;
+class Htest{
+    public static void main(String[] arg) {
+        HashMap<Integer,String> student = new HashMap<>();
+        student.put(101,"abc");
+        student.put(102,"def");
+        student.put(103,"ghi");
+        Collection<String> names = student.values();
+        System.out.println(names);
+        Set<Map.Entry<Integer,String>> entries = student.entrySet();
+        for(Map.Entry<Integer,String> entry : entries) {
+            System.out.println(entry.getValue());
+        }
+    }
+}
+
+
+
+
+import java.util.*;
+class Htest{
+    public static void main(String[] arg) {
+        HashMap<Integer,String> student = new HashMap<>();
+        student.put(101,"abc");
+        student.put(102,"def");
+        student.put(103,"ghi");
+        Collection<String> names = student.values();
+        System.out.println(names);
+        Set<Map.Entry<Integer,String>> entries = student.entrySet();
+        for(Map.Entry<Integer,String> entry : entries) {
+            System.out.println(entry.getKeys());
+        }
+    }
+}
+
+
+
+
+import java.util.*;
+class Htest{
+    public static void main(String[] arg) {
+        HashMap<Integer,String> student = new HashMap<>();
+        student.put(101,"abc");
+        student.put(102,"def");
+        student.put(103,"ghi");
+        Collection<String> names = student.values();
+        System.out.println(names);
+        Set<Map.Entry<Integer,String>> entries = student.entrySet();
+        for(Map.Entry<Integer,String> entry : entries) {
+            System.out.println(entry);                                  // print each entry in the map
+            System.out.println(student.size());                         // get the size of the map
+            System.out.println(student.isEmpty());                      // check if the map is empty
+        }
+    }
+}
+
+
+
+
+import java.util.*;
+class Htest{
+    public static void main(String[] arg) {
+        HashMap<Integer,String> student = new HashMap<>();
+        student.put(101,"abc");
+        student.put(102,"def");
+        student.put(103,"ghi");
+        Collection<String> names = student.values();
+        System.out.println(names);
+        Set<Map.Entry<Integer,String>> entries = student.entrySet();
+        for(Map.Entry<Integer,String> entry : entries) {
+            System.out.println(entry);                          // print each entry in the map
+            System.out.println(student.size());                 // get the size of the map
+            System.out.println(student.isEmpty());              // check if the map is empty
+            student.remove(101);                                // remove the entry with key 101
+            student.replace(102,"xyz");                         // replace the value of key 102 with "xyz"
+        }
+    }
+}
+
+
+
+
+import java.util.*;
+// This program demonstrates the use of HashMap in Java.
+// It creates a HashMap, adds some key-value pairs, removes a key-value pair,
+// replaces a value, and checks if the map is empty or not.
+// It also prints the contents of the map and its size.
+// The program uses a for-each loop to iterate over the entries of the map.
+// It also demonstrates the use of Collection and List interfaces.
+class Htest {
+    public static void main(String[] arg) {
+        HashMap<Integer, String> student = new HashMap<>();
+        student.put(101, "abc");
+        student.put(102, "def");
+        student.put(103, "ghi");
+
+        Collection<String> names = student.values();
+        System.out.println(names);
+
+        List<Integer> keysToRemove = new ArrayList<>();
+        for (Map.Entry<Integer, String> entry : student.entrySet()) {  
+            System.out.println(entry);
+            if (entry.getKey() == 101) {
+                keysToRemove.add(entry.getKey());
+            }
+        }
+        for (Integer key : keysToRemove) {
+            student.remove(key);
+        }
+
+        student.replace(102, "xyz"); 
+        student.putIfAbsent(104, "jkl"); 
+
+        System.out.println("Final HashMap: " + student);
+        System.out.println("Size: " + student.size());
+        System.out.println("Is Empty: " + student.isEmpty());
+    }
+}
